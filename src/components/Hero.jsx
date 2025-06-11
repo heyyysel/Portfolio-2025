@@ -10,40 +10,50 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pastel-lavender via-pastel-blue to-pastel-mint">
-      <div className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-text-dark mb-6">
-            Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Hazel Baldava
-            </span>
-          </h1>
-          
-          <div className="text-xl md:text-2xl text-text-dark/80 mb-8 space-y-2">
-            <p className="font-medium">Computer Science Student</p>
-            <div className="flex items-center justify-center space-x-4">
-              <span className="w-8 h-px bg-text-dark/30"></span>
-              <span>Process Associate</span>
-              <span className="w-8 h-px bg-text-dark/30"></span>
-            </div>
-            <p className="font-medium">Aspiring Software Developer</p>
-          </div>
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pastel-lavender via-pastel-blue to-pastel-mint relative"
+    >
+      <div className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in">
+        {/* Profile Picture */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/465745115_8977811638942854_5499499755299702046_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEEoAzyAYM2biKYyd_2_8WgYxTIzlP-Qv5jFMjOU_5C_hpUlnCKNOslbJHAfREXtYStoNTgXSkdJNP3MgMZknwF&_nc_ohc=PA9i3LR2lkcQ7kNvwHIkRUA&_nc_oc=AdkOWJo1ga7vnQdjtKg3QjcgLN3OHDr_7BRhmfrhxEgEFv10EZdD01pkorKoXQ4VR7A&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=k-TPIx3vieXeaowYtptTjA&oh=00_AfM4B-EJF5HZXaZOAFWCr-bLVkd9srOSJWbGY2mQ2KZ0Fg&oe=6852E4A3"
+            alt="Hazel Baldava"
+            className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg"
+          />
+        </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button
-              onClick={() => scrollToSection('projects')}
-              className="bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              View My Work
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-full font-medium hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-105"
-            >
-              Get In Touch
-            </button>
+        <h1 className="text-5xl md:text-7xl font-bold text-text-dark mb-6">
+          Hi, I'm{' '}
+          <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            Hazel Baldava
+          </span>
+        </h1>
+
+        <div className="text-xl md:text-2xl text-text-dark/80 mb-8 space-y-2">
+          <p className="font-medium">Computer Science Student</p>
+          <div className="flex items-center justify-center space-x-4">
+            <span className="w-8 h-px bg-text-dark/30"></span>
+            <span>Process Associate</span>
+            <span className="w-8 h-px bg-text-dark/30"></span>
           </div>
+          <p className="font-medium">Aspiring Software Developer</p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <button
+            onClick={() => scrollToSection('projects')}
+            className="bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            View My Work
+          </button>
+          <button
+            onClick={() => scrollToSection('contact')}
+            className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-full font-medium hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+          >
+            Get In Touch
+          </button>
         </div>
 
         <div className="animate-bounce-gentle">
@@ -56,7 +66,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
+      {/* Floating Pastel Circles */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-pastel-peach/30 rounded-full animate-bounce-gentle"></div>
       <div className="absolute top-32 right-16 w-16 h-16 bg-pastel-pink/40 rounded-full animate-bounce-gentle" style={{ animationDelay: '1s' }}></div>
       <div className="absolute bottom-20 left-20 w-12 h-12 bg-pastel-yellow/50 rounded-full animate-bounce-gentle" style={{ animationDelay: '2s' }}></div>

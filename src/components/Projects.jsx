@@ -9,51 +9,49 @@ const Projects = () => {
   });
 
   const projects = [
-  {
-    title: 'Memory Haze',
-    description: 'A memory card matching game built to enhance cognitive reflexes and concentration.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: 'https://images.pexels.com/photos/1314544/pexels-photo-1314544.jpeg?auto=compress&cs=tinysrgb&w=600', 
-    github: '#https://github.com/heyyysel/Memory-Haze',
-  },
-  {
-    title: 'Dodge the Creeps',
-    description: 'Fast-paced 2D arcade-style game where players dodge enemies for as long as possible.',
-    technologies: ['Godot Engine', 'GDScript'],
-    image: 'https://images.pexels.com/photos/1293261/pexels-photo-1293261.jpeg?auto=compress&cs=tinysrgb&w=600', 
-    github: '#https://github.com/heyyysel/Dodge-the-Creeps-',
-  },
-  {
-    title: 'Dungeon Rush',
-    description: 'Side-scrolling pixel dungeon game with traps, enemies, and a treasure-hunting hero.',
-    technologies: ['Godot Engine', 'Pixel Art', 'GDScript'],
-    image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600', 
-    github: '#https://github.com/heyyysel/Dungeon-Rush',
-  },
-  {
-    title: 'Youth Saver',
-    description: 'A youth-focused responsive website promoting mental health awareness and resources.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    image: 'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600',
-    github: '#https://github.com/heyyysel/Youth-Saver',
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'My personal responsive portfolio showcasing my projects, resume, and contact form.',
-    technologies: ['React', 'Tailwind CSS', 'EmailJS'],
-    image: 'https://images.unsplash.com/photo-1587614203976-365c74645e83?auto=compress&cs=tinysrgb&w=600',
-    github: '#https://github.com/heyyysel/Hazel-Baldava-Portfolio',
-  },
-  {
-    title: 'E-Commerce Website',
-    description: 'A complete online store platform with product listings, shopping cart, and payment integration.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-    image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600',
-    github: '#https://github.com/heyyysel/e-commerce',
-  },
-];
-
-
+    {
+      title: 'Memory Haze',
+      description: 'A memory card matching game built to enhance cognitive reflexes and concentration.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: 'https://images.pexels.com/photos/1314544/pexels-photo-1314544.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/heyyysel/Memory-Haze',
+    },
+    {
+      title: 'Dodge the Creeps',
+      description: 'Fast-paced 2D arcade-style game where players dodge enemies for as long as possible.',
+      technologies: ['Godot Engine', 'GDScript'],
+      image: 'https://images.pexels.com/photos/1293261/pexels-photo-1293261.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/heyyysel/Dodge-the-Creeps-',
+    },
+    {
+      title: 'Dungeon Rush',
+      description: 'Side-scrolling pixel dungeon game with traps, enemies, and a treasure-hunting hero.',
+      technologies: ['Godot Engine', 'Pixel Art', 'GDScript'],
+      image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/heyyysel/Dungeon-Rush',
+    },
+    {
+      title: 'Youth Saver',
+      description: 'A youth-focused responsive website promoting mental health awareness and resources.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      image: 'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/heyyysel/Youth-Saver',
+    },
+    {
+      title: 'Portfolio Website',
+      description: 'My personal responsive portfolio showcasing my projects, resume, and contact form.',
+      technologies: ['React', 'Tailwind CSS', 'EmailJS'],
+      image: 'https://images.unsplash.com/photo-1587614203976-365c74645e83?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/heyyysel/Hazel-Baldava-Portfolio',
+    },
+    {
+      title: 'E-Commerce Website',
+      description: 'A complete online store platform with product listings, shopping cart, and payment integration.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+      image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/heyyysel/e-commerce',
+    },
+  ];
 
   const techColors = {
     'HTML': 'bg-orange-100 text-orange-800',
@@ -118,6 +116,8 @@ const Projects = () => {
                   <div className="flex space-x-4">
                     <a 
                       href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors duration-200 text-sm font-medium"
                     >
                       <FaGithub />

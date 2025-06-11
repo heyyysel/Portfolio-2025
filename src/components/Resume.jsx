@@ -8,10 +8,6 @@ const Resume = () => {
     threshold: 0.1,
   });
 
-  const handleDownload = () => {
-  window.open('/Hazel Baldava Resume.pdf', '_blank');
-  };
-
   return (
     <section id="resume" className="py-20 bg-bg-light">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,13 +15,14 @@ const Resume = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">Resume</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-6"></div>
-            <button
-              onClick={handleDownload}
+            <a
+              href="/Hazel-Baldava-Resume.pdf"
+              download
               className="inline-flex items-center space-x-3 bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <FaDownload />
               <span>Download Resume</span>
-            </button>
+            </a>
           </div>
 
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
@@ -35,7 +32,7 @@ const Resume = () => {
               <p className="text-xl opacity-90">Computer Science Student | Process Associate | Aspiring Software Developer</p>
               <div className="mt-4 text-sm opacity-80">
                 <p>hazelbaldava016@gmail.com | 09764870858</p>
-                <p>Cavite, Philippines | Portfolio</p>
+                <p>Cavite, Philippines | <a href="#" className="underline">Portfolio</a></p>
               </div>
             </div>
 
@@ -71,7 +68,7 @@ const Resume = () => {
                   </div>
                   <div className="border-l-4 border-purple-600 pl-6">
                     <h4 className="text-lg font-bold text-text-dark">Customer Service Representative</h4>
-                    <p className="text-purple-600 font-medium">Multiple Companies (Canva) | 2019 - 2023</p>
+                    <p className="text-purple-600 font-medium">Canva | 2021 - 2023</p>
                     <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
                       <li>Reviewed applications for Canva’s educational program with a focus on quality and eligibility.</li>
                       <li>Verified applicant credentials such as teaching licenses and institutional affiliations.</li>
@@ -80,7 +77,7 @@ const Resume = () => {
                   </div>
                   <div className="border-l-4 border-purple-600 pl-6">
                     <h4 className="text-lg font-bold text-text-dark">Customer Service Representative</h4>
-                    <p className="text-purple-600 font-medium">Multiple Companies (DoorDash, eBay) | 2019 - 2023</p>
+                    <p className="text-purple-600 font-medium">DoorDash, eBay | 2019 - 2021</p>
                     <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
                       <li>Communicated resolutions clearly to involved parties to maintain trust and satisfaction.</li>
                       <li>Analyzed case details, reviewed communication history, and ensured policy compliance.</li>

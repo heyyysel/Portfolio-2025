@@ -63,7 +63,7 @@ const About = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
+                  <div className="text-3xl font-bold text-purple-600 mb-2">6+</div>
                   <div className="text-text-dark/80 font-medium">Years Experience</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">

@@ -71,7 +71,7 @@ const Contact = () => {
     {
       icon: FaLinkedin,
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/hazel-baldava-8548a7199?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      url: 'https://www.linkedin.com/in/hazel-baldava-8548a7199/',
       color: 'hover:text-blue-600',
     },
     {
@@ -83,7 +83,7 @@ const Contact = () => {
     {
       icon: FaFacebook,
       name: 'Facebook',
-      url: 'https://www.facebook.com/heeeeeyselnut#',
+      url: 'https://www.facebook.com/heeeeeyselnut',
       color: 'hover:text-blue-500',
     },
   ];
