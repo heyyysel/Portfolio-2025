@@ -45,7 +45,7 @@ const Resume = () => {
                   <h3 className="text-2xl font-bold text-text-dark">Professional Summary</h3>
                 </div>
                 <p className="text-text-dark/80 leading-relaxed">
-                  3rd year Computer Science student with 5+ years of customer service experience across chat and voice accounts. 
+                  3rd year Computer Science student with 6+ years of customer service experience across chat and voice accounts. 
                   Skilled in combining technical knowledge with strong communication abilities to create user-centered solutions. 
                   Passionate about UI/UX design, software development, and automation with a focus on accessibility and efficiency.
                 </p>
@@ -69,7 +69,7 @@ const Resume = () => {
                   </div>
                   <div className="border-l-4 border-purple-600 pl-6">
                     <h4 className="text-lg font-bold text-text-dark">Customer Service Representative</h4>
-                    <p className="text-purple-600 font-medium">Canva | 2021 - 2023</p>
+                    <p className="text-purple-600 font-medium">Canva | 2020 - 2025</p>
                     <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
                       <li>Reviewed applications for Canva’s educational program with a focus on quality and eligibility.</li>
                       <li>Verified applicant credentials such as teaching licenses and institutional affiliations.</li>
@@ -78,7 +78,7 @@ const Resume = () => {
                   </div>
                   <div className="border-l-4 border-purple-600 pl-6">
                     <h4 className="text-lg font-bold text-text-dark">Customer Service Representative</h4>
-                    <p className="text-purple-600 font-medium">DoorDash, eBay | 2019 - 2021</p>
+                    <p className="text-purple-600 font-medium">DoorDash, eBay | 2019 - 2020</p>
                     <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
                       <li>Communicated resolutions clearly to involved parties to maintain trust and satisfaction.</li>
                       <li>Analyzed case details, reviewed communication history, and ensured policy compliance.</li>
