@@ -16,7 +16,7 @@ const Resume = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">Resume</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-6"></div>
             <a
-              href="/Hazel-Baldava-Resume.pdf"
+              href="/https://www.canva.com/design/DAGSmfNOB-s/Bzx0JzXCYF-8AC_Wy8bQVw/view?utm_content=DAGSmfNOB-s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he73149aea7"
               download
               className="inline-flex items-center space-x-3 bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
