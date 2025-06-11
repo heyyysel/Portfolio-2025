@@ -159,14 +159,17 @@ const FuturePlans = () => {
                   title: 'Meaningful Impact',
                   description:
                     'Long-term goal is to lead or contribute to impactful tech projects—especially those in education, automation, and accessibility—to create value for communities.',
-                },
-              ].map((item, index) => (
-                <div key={index} className="relative">
-                  <div className="absolute -left-2.5 w-5 h-5 bg-purple-600 rounded-full"></div>
-                  <h4 className="text-lg font-bold text-text-dark">{item.year}: {item.title}</h4>
-                  <p className="text-text-dark/70">{item.description}</p>
-                </div>
-              ))}
+                  },
+                ].map((item, index) => (
+                  <div key={index} className="relative pl-6">
+                    {/* Dot */}
+                    <div className="absolute left-0 top-1.5 w-4 h-4 bg-purple-600 rounded-full"></div>
+
+                    {/* Content */}
+                    <h4 className="text-lg font-bold text-text-dark">{item.year}: {item.title}</h4>
+                    <p className="text-text-dark/70">{item.description}</p>
+                  </div>
+                ))}
             </div>
           </div>
 
