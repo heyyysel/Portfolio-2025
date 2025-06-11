@@ -115,27 +115,102 @@ const FuturePlans = () => {
 
           {/* Timeline */}
           <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-text-dark mb-8 text-center">My Roadmap</h3>
-            <div className="space-y-6">
-              <div className="flex items-center space-x-6">
-                <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-text-dark">2024-2025: Foundation Building</h4>
-                  <p className="text-text-dark/70">Complete degree, strengthen technical skills, build portfolio</p>
-                </div>
+          <h3 className="text-2xl font-bold text-text-dark mb-8 text-center">My Career Roadmap</h3>
+          <div className="space-y-6">
+            {/* 2019–2020 */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2019–2020: Real-World Onboarding</h4>
+                <p className="text-text-dark/70">
+                  Started my professional journey as a Customer Service Representative for DoorDash and eBay. 
+                  Gained foundational experience in handling escalations, resolving issues, and delivering excellent customer support across both chat and voice platforms.
+                </p>
               </div>
-              <div className="flex items-center space-x-6">
-                <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-text-dark">2025-2026: Career Transition</h4>
-                  <p className="text-text-dark/70">Secure first role in software development or related field</p>
-                </div>
+            </div>
+
+            {/* 2020–2025 */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2020–2025: Specialization & Remote Adaptation</h4>
+                <p className="text-text-dark/70">
+                  Transitioned to Canva during the pandemic, where I handled application reviews for Canva for Education. 
+                  Strengthened my attention to detail, documentation skills, and remote work efficiency while balancing academic life and work from home.
+                </p>
               </div>
-              <div className="flex items-center space-x-6">
-                <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-text-dark">2026+: Impact & Growth</h4>
-                  <p className="text-text-dark/70">Lead projects that create meaningful change in communities</p>
+            </div>
+
+            {/* 2022–2026 */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2022–2026: Academic & Technical Growth</h4>
+                <p className="text-text-dark/70">
+                  Enrolled in the Bachelor of Science in Computer Science at Cavite State University – Bacoor Campus. 
+                  Focused on core subjects like software development, data structures, system analysis, and UI/UX design using tools such as React, Tailwind, and Figma. 
+                  Balanced coursework with professional responsibilities to stay career-ready.
+                </p>
+              </div>
+            </div>
+
+            {/* 2023–2024 */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2023–2024: Transition to Process-Oriented Roles</h4>
+                <p className="text-text-dark/70">
+                  Joined Genpact as a Process Associate, where I handled charged-off debt accounts for a financial client. 
+                  This role enhanced my documentation, compliance awareness (e.g., FDCPA), and analytical skills—laying a strong foundation for my shift toward system thinking and structured workflows in software projects.
+                </p>
+              </div>
+            </div>
+
+            {/* 2024–Present */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2024–Present: Advancing at Portfolio Recovery Associates</h4>
+                <p className="text-text-dark/70">
+                  Currently working at Portfolio Recovery Associates where I apply my strong background in debt servicing and customer interaction. 
+                  This role continuously strengthens my decision-making, critical thinking, and process documentation skills—experiences that align with building future systems in software development and automation.
+                </p>
+              </div>
+            </div>
+
+            {/* 2024–2025 */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2024–2025: Foundation Building</h4>
+                <p className="text-text-dark/70">
+                  Focused on polishing front-end and back-end skills, completing my thesis on an intelligent traffic navigation system, and building a personal portfolio. 
+                  Actively seeking freelance or internship opportunities to gain more hands-on experience in real-world development environments.
+                </p>
+              </div>
+            </div>
+
+            {/* 2025–2026 */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2025–2026: Career Transition</h4>
+                <p className="text-text-dark/70">
+                  Plan to fully transition into the tech industry by securing a role as a software developer, QA tester, or UI/UX designer. 
+                  Leverage my combined background in process management and tech to solve real user problems through efficient, accessible solutions.
+                </p>
+              </div>
+            </div>
+
+            {/* 2026+ */}
+            <div className="flex items-center space-x-6">
+              <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <h4 className="font-bold text-text-dark">2026 & Beyond: Impact & Leadership</h4>
+                <p className="text-text-dark/70">
+                  Aim to lead or collaborate on mission-driven projects, particularly in education, traffic systems, or inclusive design. 
+                  Intend to give back by mentoring junior tech professionals and using technology to uplift underserved communities and persons with disabilities.
+                </p>
                 </div>
               </div>
             </div>

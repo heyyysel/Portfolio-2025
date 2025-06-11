@@ -27,7 +27,7 @@ const About = () => {
                 </h3>
                 <p className="text-text-dark/80 leading-relaxed">
                   Hi! I'm a 3rd year Bachelor of Science in Computer Science student at Cavite State University - Bacoor Campus. 
-                  With over 6 years of customer service experience in chat and voice accounts (including roles at DoorDash, eBay, and Canva), 
+                  With over 6 years of customer service experience in chat and voice accounts (including roles at DoorDash, eBay, Canva and Portfolio Recovery Associates), 
                   I bring a strong communication foundation into my journey as an aspiring software developer. I'm passionate about combining 
                   real-world needs with efficient systems and creative design, with a growing skillset in UI/UX, software development, and automation.
                 </p>
