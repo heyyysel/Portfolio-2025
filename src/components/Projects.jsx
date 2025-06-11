@@ -9,42 +9,51 @@ const Projects = () => {
   });
 
   const projects = [
-    {
-      title: 'Student Information System',
-      description: 'A comprehensive system for managing student records, grades, and course enrollment',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      github: '#',
-    },
-    {
-      title: 'E-Commerce Website',
-      description: 'Full-stack online shopping platform with cart functionality and payment integration',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      github: '#',
-    },
-    {
-      title: 'Task Management App',
-      description: 'Productivity tool for organizing tasks with drag-and-drop functionality',
-      technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      github: '#',
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application with location-based forecasts and interactive maps',
-      technologies: ['JavaScript', 'OpenWeather API', 'Chart.js'],
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-      github: '#',
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'This responsive portfolio showcasing my projects and skills',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'EmailJS'],
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      github: '#',
-    },
-  ];
+  {
+    title: 'Memory Haze',
+    description: 'A memory card matching game built to enhance cognitive reflexes and concentration.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    image: 'https://images.pexels.com/photos/1314544/pexels-photo-1314544.jpeg?auto=compress&cs=tinysrgb&w=600', 
+    github: '#https://github.com/heyyysel/Memory-Haze',
+  },
+  {
+    title: 'Dodge the Creeps',
+    description: 'Fast-paced 2D arcade-style game where players dodge enemies for as long as possible.',
+    technologies: ['Godot Engine', 'GDScript'],
+    image: 'https://images.pexels.com/photos/1293261/pexels-photo-1293261.jpeg?auto=compress&cs=tinysrgb&w=600', 
+    github: '#https://github.com/heyyysel/Dodge-the-Creeps-',
+  },
+  {
+    title: 'Dungeon Rush',
+    description: 'Side-scrolling pixel dungeon game with traps, enemies, and a treasure-hunting hero.',
+    technologies: ['Godot Engine', 'Pixel Art', 'GDScript'],
+    image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600', 
+    github: '#https://github.com/heyyysel/Dungeon-Rush',
+  },
+  {
+    title: 'Youth Saver',
+    description: 'A youth-focused responsive website promoting mental health awareness and resources.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    image: 'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600',
+    github: '#https://github.com/heyyysel/Youth-Saver',
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'My personal responsive portfolio showcasing my projects, resume, and contact form.',
+    technologies: ['React', 'Tailwind CSS', 'EmailJS'],
+    image: 'https://images.unsplash.com/photo-1587614203976-365c74645e83?auto=compress&cs=tinysrgb&w=600',
+    github: '#https://github.com/heyyysel/Hazel-Baldava-Portfolio',
+  },
+  {
+    title: 'E-Commerce Website',
+    description: 'A complete online store platform with product listings, shopping cart, and payment integration.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+    image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600',
+    github: '#https://github.com/heyyysel/e-commerce',
+  },
+];
+
+
 
   const techColors = {
     'HTML': 'bg-orange-100 text-orange-800',

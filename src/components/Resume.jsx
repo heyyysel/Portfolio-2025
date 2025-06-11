@@ -9,7 +9,7 @@ const Resume = () => {
   });
 
   const handleDownload = () => {
-    alert('Pang cv');
+  window.open('/Hazel Baldava Resume.pdf', '_blank');
   };
 
   return (
@@ -17,16 +17,14 @@ const Resume = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`transition-all duration-1000 ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">
-              Resume
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">Resume</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-6"></div>
             <button
               onClick={handleDownload}
               className="inline-flex items-center space-x-3 bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <FaDownload />
-              <span>Download CV</span>
+              <span>Download Resume</span>
             </button>
           </div>
 
@@ -64,20 +62,29 @@ const Resume = () => {
                 <div className="space-y-6">
                   <div className="border-l-4 border-purple-600 pl-6">
                     <h4 className="text-lg font-bold text-text-dark">Process Associate</h4>
-                    <p className="text-purple-600 font-medium">Genpact | 2023 - Present</p>
+                    <p className="text-purple-600 font-medium">Genpact | 2025 - Present</p>
                     <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
-                      <li>Manage process documentation and workflow optimization</li>
-                      <li>Collaborate with cross-functional teams to improve efficiency</li>
-                      <li>Implement automation solutions for routine tasks</li>
+                      <li>Handled processing and management of charged-off consumer debt accounts.</li>
+                      <li>Ensured all collections and account activities complied with FDCPA and company policies.</li>
+                      <li>Identified and resolved discrepancies in account data or documentation.</li>
                     </ul>
                   </div>
                   <div className="border-l-4 border-purple-600 pl-6">
                     <h4 className="text-lg font-bold text-text-dark">Customer Service Representative</h4>
-                    <p className="text-purple-600 font-medium">Multiple Companies (DoorDash, eBay, Canva) | 2019 - 2023</p>
+                    <p className="text-purple-600 font-medium">Multiple Companies (Canva) | 2019 - 2023</p>
                     <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
-                      <li>Provided exceptional customer support via chat and voice channels</li>
-                      <li>Resolved complex technical issues and billing inquiries</li>
-                      <li>Maintained high customer satisfaction ratings consistently</li>
+                      <li>Reviewed applications for Canva’s educational program with a focus on quality and eligibility.</li>
+                      <li>Verified applicant credentials such as teaching licenses and institutional affiliations.</li>
+                      <li>Maintained accurate records and ensured GDPR/compliance standards were followed.</li>
+                    </ul>
+                  </div>
+                  <div className="border-l-4 border-purple-600 pl-6">
+                    <h4 className="text-lg font-bold text-text-dark">Customer Service Representative</h4>
+                    <p className="text-purple-600 font-medium">Multiple Companies (DoorDash, eBay) | 2019 - 2023</p>
+                    <ul className="text-text-dark/80 mt-2 list-disc list-inside space-y-1">
+                      <li>Communicated resolutions clearly to involved parties to maintain trust and satisfaction.</li>
+                      <li>Analyzed case details, reviewed communication history, and ensured policy compliance.</li>
+                      <li>Maintained high customer satisfaction ratings consistently.</li>
                     </ul>
                   </div>
                 </div>
@@ -127,6 +134,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

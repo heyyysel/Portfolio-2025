@@ -9,12 +9,12 @@ const Skills = () => {
   });
 
   const technicalSkills = [
-    { name: 'HTML/CSS', level: 10, icon: FaCode, color: 'bg-orange-500' },
-    { name: 'JavaScript', level: 10, icon: FaCode, color: 'bg-yellow-500' },
-    { name: 'React', level: 10, icon: FaDesktop, color: 'bg-blue-500' },
-    { name: 'PHP', level: 10, icon: FaCode, color: 'bg-purple-500' },
-    { name: 'MySQL', level: 10, icon: FaDatabase, color: 'bg-blue-600' },
-    { name: 'UI/UX Design', level: 10, icon: FaMobile, color: 'bg-pink-500' },
+    { name: 'HTML/CSS', level: 60, icon: FaCode, color: 'bg-orange-500' },
+    { name: 'JavaScript', level: 30, icon: FaCode, color: 'bg-yellow-500' },
+    { name: 'React', level: 20, icon: FaDesktop, color: 'bg-blue-500' },
+    { name: 'PHP', level: 50, icon: FaCode, color: 'bg-purple-500' },
+    { name: 'MySQL', level: 50, icon: FaDatabase, color: 'bg-blue-600' },
+    { name: 'UI/UX Design', level: 70, icon: FaMobile, color: 'bg-pink-500' },
   ];
 
   return (
