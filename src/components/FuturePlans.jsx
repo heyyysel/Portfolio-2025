@@ -114,72 +114,51 @@ const FuturePlans = () => {
           </div>
 
           {/* Timeline */}
-          <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl mb-16">
-            <h3 className="text-2xl font-bold text-text-dark mb-8 text-center">My Roadmap</h3>
-            <div className="space-y-6">
-              <div className="flex items-center space-x-6">
-                <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-text-dark">2024–2025: Foundation Building</h4>
-                  <p className="text-text-dark/70">Complete degree, strengthen technical skills, build portfolio</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-6">
-                <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-text-dark">2025–2026: Career Transition</h4>
-                  <p className="text-text-dark/70">Secure first role in software development or related field</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-6">
-                <div className="w-4 h-4 bg-purple-600 rounded-full flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-text-dark">2026+: Impact & Growth</h4>
-                  <p className="text-text-dark/70">Lead projects that create meaningful change in communities</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Career Roadmap Timeline */}
           <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-text-dark mb-8 text-center">My Career Roadmap</h3>
+            <h3 className="text-2xl font-bold text-text-dark mb-8 text-center">My Roadmap</h3>
             <div className="relative border-l-4 border-purple-600 pl-6 space-y-10">
               {[
                 {
                   year: '2019–2020',
                   title: 'Ground-Level Hustle',
-                  description: 'Started as a DoorDash delivery rider and Customer Service Representative. Gained exposure to frontline customer experience, multitasking, and time management in high-pressure environments.',
+                  description:
+                    'Started as a DoorDash delivery rider and Customer Service Representative. Gained exposure to frontline customer experience, multitasking, and time management in high-pressure environments.',
                 },
                 {
                   year: '2020–2025',
                   title: 'Mediation & Remote Responsibility',
-                  description: 'Joined eBay as a Member-to-Member Mediator, resolving disputes and promoting fair user interactions. At the same time, worked at Canva as a Canva for Education Application Reviewer...',
+                  description:
+                    'Joined eBay as a Member-to-Member Mediator, resolving disputes and promoting fair user interactions. Also worked at Canva as a Canva for Education Application Reviewer, handling educator applications for free access.',
                 },
                 {
                   year: '2022–Present',
                   title: 'Academic Ascent',
-                  description: 'Currently pursuing a BS in Computer Science at Cavite State University – Bacoor Campus...',
+                  description:
+                    'Currently pursuing a Bachelor of Science in Computer Science at Cavite State University – Bacoor Campus, focusing on software development and real-world applications.',
                 },
                 {
                   year: '2025–Present',
                   title: 'Strengthening as a Process Associate',
-                  description: 'Currently employed at Portfolio Recovery Associates...',
+                  description:
+                    'Now employed at Portfolio Recovery Associates, sharpening my professional discipline, attention to detail, and workplace communication.',
                 },
                 {
                   year: '2024–2025',
                   title: 'Portfolio & Thesis Completion',
-                  description: 'Finalizing my thesis project on an intelligent traffic navigation system...',
+                  description:
+                    'Finalizing my thesis on an intelligent traffic-aware navigation system and developing a personal portfolio that highlights real-world skills and academic growth.',
                 },
                 {
                   year: '2026–2027',
                   title: 'Career Crossover into Tech',
-                  description: 'Once fully confident, I aim to transition into roles like software developer...',
+                  description:
+                    'Aiming to fully transition into software development or related roles such as UI/UX design or systems analysis by leveraging my academic and industry experience.',
                 },
                 {
                   year: '2028 & Beyond',
                   title: 'Meaningful Impact',
-                  description: 'My long-term goal is to lead or collaborate on impactful tech projects—especially in education, process automation, and accessibility...',
+                  description:
+                    'Long-term goal is to lead or contribute to impactful tech projects—especially those in education, automation, and accessibility—to create value for communities.',
                 },
               ].map((item, index) => (
                 <div key={index} className="relative">
