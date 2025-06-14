@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaFacebook, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaFacebook, FaPaperPlane } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -31,16 +31,17 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'service_wuuhnli',
+        'service_9s92g25',
         'template_q5kv9bx',
         {
           from_name: formData.name,
           from_email: formData.email,
+          subject: formData.subject,
           message: formData.message,
         },
         'FeKsa6MhAXWkjqMzl'
       );
-      
+
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
@@ -77,7 +78,7 @@ const Contact = () => {
     {
       icon: FaGithub,
       name: 'GitHub',
-      url: 'github.com/heyyysel',
+      url: 'https://github.com/heyyysel',
       color: 'hover:text-gray-800',
     },
     {
@@ -101,9 +102,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`transition-all duration-1000 ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">
-              Let's Get In Touch
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">Let's Get In Touch</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-6"></div>
             <p className="text-xl text-text-dark/70 max-w-3xl mx-auto">
               I'm always open to discussing new opportunities, interesting projects, or just having a friendly chat about technology and development.
@@ -114,7 +113,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-text-dark mb-6">Contact Information</h3>
-              
+
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center space-x-4 bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -158,7 +157,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-text-dark mb-6">Send Message</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -191,6 +190,25 @@ const Contact = () => {
                       placeholder="Your Email....."
                     />
                   </div>
+                </div>
+
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-text-dark mb-2">
+                    Subject
+                  </label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                  >
+                    <option value="" disabled>Select a subject</option>
+                    {subjects.map((subj, index) => (
+                      <option key={index} value={subj}>{subj}</option>
+                    ))}
+                  </select>
                 </div>
 
                 <div>
